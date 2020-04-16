@@ -1,0 +1,177 @@
+/* ------------------------- */
+/* Estilos Generales */
+/* ------------------------- */
+
+* {
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+}
+
+body { 
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    margin-bottom: 0;
+}
+p{
+    text-align: center;
+}
+
+.texto-naranja {
+    font-weight: 300;
+    color: orange;
+}
+
+.texto-blanco {
+    font-weight: 700;
+    color: #fff;
+}
+
+.texto-negro {
+	color: #000;
+}
+.texto-verde{
+    color: #1FFF00
+}
+#fp-nav ul li a span{
+    background: orange;
+}
+#fp-nav ul li .fp-tooltip{
+    color: orange;
+}
+.nav{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 70;
+    width: 100%;
+    margin: 0;
+    padding: 10px 20px;
+}
+.nav li,
+.nav a{
+    display: inline-block;
+    margin: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "oswald",sans-serif;
+    font-size: 19px;
+    color: #c2c2c2;
+    transition: .5s ease;
+}
+.nav li.active{
+    border-bottom: 2px solid orange;
+}
+.menu li a{
+    transition: .5s ease;
+    margin: 0;
+    padding: 0;
+}
+.menu li.active a,
+.menu li.hover a { /*recuerda preguntarle al profesor por que el hover no funciona ...*/
+    color: orange;
+}
+
+.header{
+    background: url(../media/imagen1.jpg );
+    background-position:center; 
+    background-size: 1500px;
+}
+.header .contenedor-titulo{
+    text-align: center;
+    position: relative;
+    z-index: 99;
+}
+.header .titulo{
+    font-size: 70px;
+    text-transform: uppercase;
+}
+
+.header .contenedor-icono {
+    position: absolute;
+    z-index: 99;
+    bottom: 3%;
+    left: 50%;
+    font-size: 40px;
+    animation: bajar-subir 1s ease infinite;
+}
+
+/* animacion flecha hacia ahacia abajo */
+@keyframes bajar-subir {
+    0%{transform: translateY(20px);}
+    25%{transform: translateY(0);}
+    100%{transform: translateY(20px);}
+}
+
+.compañeros article{
+    background-position: right;
+    background-size: cover;
+}
+.compañeros article:nth-child(1){
+    background-image: url(../media/1.jpg);
+}
+
+.compañeros article:nth-child(2){
+    background-image: url(../media/1.jpg);
+}
+
+.compañeros article:nth-child(3){
+    background-image: url(../media/1.jpg);
+}
+
+.compañeros .modelo{
+    font-size: 45px;
+}
+.compañeros .descripcion {
+    font-size: 22px;
+}
+
+.fp-controlArrow.fp-next,
+.fp-controlArrow.fp-prev{
+    top: 95%
+}
+.fp-controlArrow.fp-prev{
+
+    border-color: transparent #B79132 transparent transparent; 
+}
+.fp-controlArrow.fp-next{
+    border-color: transparent transparent transparent #B79132;
+}
+.footer texto-naranja{
+    text-transform: uppercase;
+    font-size: 60px;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+
+}
+.footer h2{
+    opacity: 0;
+    font-family: "oswald",sans-serif;
+    transition: .3s ease all;
+
+}
+.footer .redes-sociales{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    font-size: 50px;
+}
+.footer .redes-sociales a {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background: #fff;
+    color:#30313A;
+    text-decoration:none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    margin: 0 20px;
+}
+.footer .facebook i { color: #3b5998; }
+.footer .facebook: hover { background: #3b5998;
